@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/first_line"
+        layout="@layout/lv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/lv_contents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/first_line"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null">
+    </ListView>
+
+</RelativeLayout>
